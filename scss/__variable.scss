@@ -1,0 +1,58 @@
+$smartphone-width: 500px;
+@mixin smartphone {
+  @media (max-width: #{$smartphone-width}) {
+    @content;
+  }
+}
+$tablet-width: 501px;
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+$desktop-width: 800px;
+@mixin desktop {
+  @media (min-width: #{$desktop-width}){
+    @content;
+  }
+}
+@mixin header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ background-color: #2b81af;
+}
+@mixin mars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+@mixin bnt{
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+  height: 2em;
+  width: 7em;
+  background: #2b81af;
+  font-family: 'Space Mono', monospace;
+  position: center;
+  border-radius: 3%;
+}
+@mixin gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@mixin logo{
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/logo-nasa.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

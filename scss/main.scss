@@ -1,0 +1,149 @@
+@import '_variable';
+@import '_colors';
+@import '_reset';
+
+body{
+  background-color: black;
+    @include smartphone{
+      header{
+         @include header;
+          .logo__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          .text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          p {
+            font-size: 2em;
+            color:#ffffff;
+            font-family: 'Space Mono', monospace;
+            }
+             }
+          .logo{
+            @include logo;
+                }
+                         }
+             }
+          .mars{
+             @include mars;
+            .gallery{
+              @include gallery;
+          .gallery__li{
+            border: 1px solid white;
+            width:100%;
+            height: 20em;
+            list-style: none;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 1em;
+                      }
+                    }
+          .load__Btn{
+            @include bnt;
+           &:hover{
+            transform: scale(1.3)
+                  }
+                    }
+                  }
+                     }
+    @include tablet{
+      header{
+        @include header;
+          .logo__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          p {
+            font-size: 2em;
+            color:#ffffff;
+            font-family: 'Space Mono', monospace;
+             }
+                }
+          .logo{
+            @include logo;
+               }
+                          }
+            }
+          .mars{
+            @include mars;
+          .gallery{
+             @include gallery;
+          .gallery__li{
+            border: 1px solid white;
+            width:22em;
+            height: 15em;
+            list-style: none;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 1em;
+                      }
+                  }
+          .load__Btn{
+            @include bnt;
+          &:hover{
+            transform: scale(1.3)
+                }
+                    }
+              }
+                  }
+    @include desktop{
+      header{
+        @include header;
+        .logo__container{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        .text{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          p {
+            font-size: 4em;
+            color:#ffffff;
+            font-family: 'Space Mono', monospace;
+          }
+        }
+        .logo{
+          @include logo;
+      }
+      }
+    }
+    .mars{
+     @include mars;
+      .gallery{
+@include gallery;
+        .gallery__li{
+          border: 1px solid white;
+          width:28em;
+          height: 20em;
+          list-style: none;
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin: 1em;
+          margin-left: 2em;
+          margin-top: 2em;
+        }
+      }
+      .load__Btn{
+      @include bnt;
+        &:hover{
+          transform: scale(1.3)
+        }
+      }
+    }
+  }
+  }
+
+
+
+
+
